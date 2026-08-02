@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For JOJA, With Love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient canvas: fireflies / hearts / sparkles drifting across entire page -->
+<canvas id="ambient-canvas"></canvas>
+
+<!-- Scroll progress heart -->
+<div class="scroll-heart" id="scrollHeart">
+  <svg viewBox="0 0 32 29" fill="none">
+    <path d="M16 28C16 28 2 19.5 2 9.8C2 4.9 5.9 1 10.7 1C13.3 1 15.4 2.2 16 4C16.6 2.2 18.7 1 21.3 1C26.1 1 30 4.9 30 9.8C30 19.5 16 28 16 28Z" stroke="#F7A8BC" stroke-width="2"/>
+  </svg>
+</div>
+
+<nav class="site-nav" id="siteNav">
+  <span class="nav-mark">J &amp; J</span>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#reasons">Reasons</a>
+    <a href="#memories">Memories</a>
+    <a href="#moments">Moments</a>
+    <a href="#quotes">Quotes</a>
+    <a href="#letter">Letter</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="hero">
+  <div class="hero-glow hero-glow--one"></div>
+  <div class="hero-glow hero-glow--two"></div>
+  <div class="hero-glow hero-glow--three"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" id="heroTyping"></p>
+    <h1 class="hero-name">
+      <span class="hero-name-glow">JANNAT</span>
+    </h1>
+    <p class="hero-subtitle">My Favorite Person, My Best Friend, My JOJA</p>
+    <button class="btn-heart ripple-btn" id="openHeartBtn">
+      <span>Open My Heart</span> <span class="btn-heart-icon">❤️</span>
+    </button>
+  </div>
+
+  <div class="scroll-cue">
+    <span></span>
+    <p>scroll</p>
+  </div>
+
+  <svg class="wave-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path d="M0,64 C240,120 480,0 720,32 C960,64 1200,120 1440,64 L1440,120 L0,120 Z" fill="#FFF8FA"></path>
+  </svg>
+</header>
+
+<!-- ============ ABOUT JOJA ============ -->
+<section class="section section--white" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal-left">
+      <div class="glass-frame">
+      <div class="img-placeholder" data-label="About JOJA">
+    <img src="images/about.jpg" alt="JOJA">
+</div>
+      </div>
+      <div class="about-visual-sparkle">✦</div>
+    </div>
+    <div class="about-text reveal-right">
+      <p class="section-eyebrow">About JOJA</p>
+      <h2 class="section-title">The Person Who Makes Everything <em>Better</em></h2>
+      <p class="about-paragraph">
+        Some people walk into your life quietly and somehow end up everywhere in it —
+        in your favorite memories, your late-night voice notes, your "you won't believe what just happened" texts.
+        That's JOJA. Not just a friend, but the person my life makes so much more sense with.
+      </p>
+      <p class="about-paragraph">
+        JANNAT has this rare way of making ordinary days feel like they matter. A boring afternoon
+        turns into an inside joke. A hard week turns bearable because she's a text away.
+        She listens like it's the most important thing she'll do all day, and somehow, for that moment, it is.
+      </p>
+      <p class="about-paragraph about-paragraph--highlight">
+        This is a small corner of the internet built just to say: I see you, I appreciate you,
+        and I'm endlessly grateful you're mine to call my best friend.
+      </p>
+    </div>
+  </div>
+  <svg class="wave-divider" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,32 C360,90 1080,0 1440,50 L1440,100 L0,100 Z" fill="#FFEFF3"></path>
+  </svg>
+</section>
+
+<!-- ============ REASONS ============ -->
+<section class="section section--blush" id="reasons">
+  <div class="container">
+    <p class="section-eyebrow center">Reasons You're Amazing</p>
+    <h2 class="section-title center">A Few of the Countless Reasons</h2>
+    <p class="section-lead center">
+      I could fill a hundred pages and still leave things out. Here's a start.
+    </p>
+
+    <div class="reasons-grid">
+      <div class="reason-card reveal-up">
+        <span class="reason-icon">🌷</span>
+        <h3>You Listen Without Judging</h3>
+        <p>I can tell you anything — the messy, unfiltered, 2am thoughts — and you never make me feel silly for feeling them.</p>
+      </div>
+      <div class="reason-card reveal-up">
+        <span class="reason-icon">✨</span>
+        <h3>You Remember the Small Things</h3>
+        <p>The tiny details I mention once and forget about — you somehow hold onto them, and it always catches me off guard.</p>
+      </div>
+      <div class="reason-card reveal-up">
+        <span class="reason-icon">🦋</span>
+        <h3>Your Laugh is Contagious</h3>
+        <p>There's a specific kind of chaos that only happens when we're laughing at something no one else would find funny.</p>
+      </div>
+      <div class="reason-card reveal-up">
+        <span class="reason-icon">🌙</span>
+        <h3>You Show Up</h3>
+        <p>Good days, hard days, chaotic days — you're there. Not because you have to be, but because that's just who you are.</p>
+      </div>
+      <div class="reason-card reveal-up">
+        <span class="reason-icon">🎀</span>
+        <h3>You're Effortlessly Kind</h3>
+        <p>Kindness looks easy on you. You give people grace before they even ask for it. It's one of my favorite things about you.</p>
+      </div>
+      <div class="reason-card reveal-up">
+        <span class="reason-icon">💌</span>
+        <h3>You Make Me Feel Safe</h3>
+        <p>With you, I don't have to perform. I can just exist, and that kind of comfort is rarer than people realize.</p>
+      </div>
+    </div>
+  </div>
+  <svg class="wave-divider" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,60 C480,0 960,110 1440,20 L1440,100 L0,100 Z" fill="#FFFFFF"></path>
+  </svg>
+</section>
+
+<!-- ============ MEMORIES (PHOTOS) ============ -->
+<section class="section section--white" id="memories">
+  <div class="container">
+    <p class="section-eyebrow center">Our Memories</p>
+    <h2 class="section-title center">Moments Worth Keeping</h2>
+    <p class="section-lead center">
+      A little gallery of us — replace these with your favorite snapshots.
+    </p>
+
+    <div class="gallery-grid">
+     <div class="img-placeholder" data-label="Photo 1">
+    <img src="images/photo1.jpg" alt="Photo 1">
+</div>
+
+<div class="img-placeholder" data-label="Photo 2">
+    <img src="images/photo2.jpg" alt="Photo 2">
+</div>
+
+<div class="img-placeholder" data-label="Photo 3">
+    <img src="images/photo3.jpg" alt="Photo 3">
+</div>
+
+<div class="img-placeholder" data-label="Photo 4">
+    <img src="images/photo4.jpg" alt="Photo 4">
+</div>
+
+<div class="img-placeholder" data-label="Photo 5">
+    <img src="images/photo5.jpg" alt="Photo 5">
+</div>
+
+<div class="img-placeholder" data-label="Photo 6">
+    <img src="images/photo6.jpg" alt="Photo 6">
+</div>
+      </div>
+    </div>
+  </div>
+  <svg class="wave-divider" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,40 C400,110 1040,-10 1440,60 L1440,100 L0,100 Z" fill="#FFEFF3"></path>
+  </svg>
+</section>
+
+<!-- ============ QUOTES ============ -->
+<section class="section section--white" id="quotes">
+  <div class="container">
+    <p class="section-eyebrow center">Beautiful Quotes</p>
+    <h2 class="section-title center">Words That Feel Like You</h2>
+
+    <div class="quotes-track" id="quotesTrack">
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+        <p>A best friend is someone who understands your past, believes in your future, and accepts you just as you are today.</p>
+      </div>
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+        <p>Some friendships aren't measured in years — they're measured in how easy it is to just be yourself.</p>
+      </div>
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+        <p>The best kind of people are the ones that come into your life and make you see the sun where you once saw clouds.</p>
+      </div>
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+        <p>Good friends are like stars — you don't always see them, but you know they're always there.</p>
+      </div>
+    </div>
+    <div class="quotes-dots" id="quotesDots"></div>
+  </div>
+  <svg class="wave-divider" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,50 C380,110 1100,0 1440,55 L1440,100 L0,100 Z" fill="#7A3B52"></path>
+  </svg>
+</section>
+
+<!-- ============ FINAL LOVE LETTER ============ -->
+<section class="section section--letter" id="letter">
+  <canvas id="heartCanvas" class="heart-canvas"></canvas>
+  <div class="container letter-container">
+    <p class="section-eyebrow center light">Before You Go</p>
+    <h2 class="section-title center light">A Little Letter, Just for You</h2>
+
+    <div class="letter-card glass-card">
+      <p>Dear JOJA,</p>
+      <p>
+        No matter where life takes us, you'll always be one of the most special people in my life.
+        Thank you for every laugh, every memory, and every moment. Stay amazing, JOJA. ❤️
+      </p>
+      <p class="letter-signature">— always, your best friend</p>
+    </div>
+
+    <button class="btn-heart btn-heart--light ripple-btn" id="confettiBtn">
+      <span>Send Love</span> <span class="btn-heart-icon">💗</span>
+    </button>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <p class="footer-mark">J &amp; J</p>
+  <p class="footer-text">Made with love, one memory at a time.</p>
+  <p class="footer-copy">For JANNAT — always my JOJA.</p>
+</footer>
+
+<audio id="bgMusic" loop preload="none">
+  <source src="music/theme.mp3" type="audio/mpeg">
+</audio>
+<button class="music-toggle" id="musicToggle" aria-label="Toggle music">🎵</button>
+
+<script src="script.js"></script>
+</body>
+</html>
